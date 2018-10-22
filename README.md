@@ -66,12 +66,12 @@ system.time(
 
 bayesian_fit
 
-```
+
 
 ##################Other Functions in the package##
 
 ##Gaussian Samples ##
-```
+
 hist(gaussiansamplesbyCLT(num_samples = 400, num_uniform_samples = 100, 
 
                      mean_norm = 5, sd_norm = 3))
