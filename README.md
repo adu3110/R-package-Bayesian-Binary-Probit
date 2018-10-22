@@ -50,7 +50,7 @@ fit <- glm(y ~ X1 + X2, family = binomial(link = probit))
 
 fit$coefficients
 ```
-#Create input data frame for Bayesian Model 
+# Create input data frame for Bayesian Model 
 ```
 input_frame <- data.frame(resp = y, ind_var1 = X1, ind_var2 = X2)
 
@@ -84,11 +84,11 @@ hist(samplegaussianonesided(800, cut_off = 0.5, mean_norm = 2, sd_norm = 1,
 
                             side = "right", num_uniform_samples = 50))
 ```
-#Inverse of a matrix by gauss elimination
+# Inverse of a matrix by gauss elimination
 ```
 gausseliminationinverse(matrix(c(2,1,1,0), 2, 2))
 ```
-#Cholesky Lower Decomposition
+# Cholesky Lower Decomposition
 ```
 choleskylower(matrix(c(2,-1,0,-1,2,1,0,1,2), 3, 3))
 ```
