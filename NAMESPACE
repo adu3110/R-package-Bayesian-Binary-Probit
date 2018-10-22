@@ -1,0 +1,2 @@
+useDynLib(bayesian_probit_regression_cfunctions)
+exportPattern("^[[:alpha:]]+")

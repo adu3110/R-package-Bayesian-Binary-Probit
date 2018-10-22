@@ -1,0 +1,13 @@
+C = gcc
+OPTS = -c -fPIC
+LOADER = gcc
+
+SOURCES = bayesian_probit_regression_cfunctions.c
+
+ bayesian_probit_regression_cfunctions.dll: $(SOURCES)
+	R CMD SHLIB $(SOURCES)
+
+.c.o: ; $(C) $(OPTS) -c $<
+
+clean:
+	-rm *.o *.so
